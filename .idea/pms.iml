@@ -121,6 +121,26 @@
       <excludeFolder url="file://$MODULE_DIR$/entry/vendor/guzzlehttp/psr7" />
       <excludeFolder url="file://$MODULE_DIR$/entry/vendor/sebastian/complexity" />
       <excludeFolder url="file://$MODULE_DIR$/entry/vendor/guzzlehttp/guzzle" />
+      <excludeFolder url="file://$MODULE_DIR$/entry/vendor/doctrine/deprecations" />
+      <excludeFolder url="file://$MODULE_DIR$/entry/vendor/doctrine/dbal" />
+      <excludeFolder url="file://$MODULE_DIR$/entry/vendor/doctrine/event-manager" />
+      <excludeFolder url="file://$MODULE_DIR$/entry/vendor/doctrine/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/entry/vendor/psr/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/entry/vendor/barryvdh/reflection-docblock" />
+      <excludeFolder url="file://$MODULE_DIR$/entry/vendor/barryvdh/laravel-ide-helper" />
+      <excludeFolder url="file://$MODULE_DIR$/entry/vendor/pdepend/pdepend" />
+      <excludeFolder url="file://$MODULE_DIR$/entry/vendor/php-cs-fixer/diff" />
+      <excludeFolder url="file://$MODULE_DIR$/entry/vendor/squizlabs/php_codesniffer" />
+      <excludeFolder url="file://$MODULE_DIR$/entry/vendor/nunomaduro/larastan" />
+      <excludeFolder url="file://$MODULE_DIR$/entry/vendor/friendsofphp/php-cs-fixer" />
+      <excludeFolder url="file://$MODULE_DIR$/entry/vendor/doctrine/annotations" />
+      <excludeFolder url="file://$MODULE_DIR$/entry/vendor/phpmd/phpmd" />
+      <excludeFolder url="file://$MODULE_DIR$/entry/vendor/phpstan/phpstan" />
+      <excludeFolder url="file://$MODULE_DIR$/entry/vendor/symfony/stopwatch" />
+      <excludeFolder url="file://$MODULE_DIR$/entry/vendor/symfony/filesystem" />
+      <excludeFolder url="file://$MODULE_DIR$/entry/vendor/symfony/config" />
+      <excludeFolder url="file://$MODULE_DIR$/entry/vendor/symfony/dependency-injection" />
+      <excludeFolder url="file://$MODULE_DIR$/entry/vendor/symfony/options-resolver" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

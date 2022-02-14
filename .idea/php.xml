@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="MessDetector">
+    <phpmd_settings>
+      <MessDetectorConfiguration tool_path="$PROJECT_DIR$/entry/vendor/bin/phpmd" />
+    </phpmd_settings>
+  </component>
+  <component name="PhpCSFixer">
+    <phpcsfixer_settings>
+      <PhpCSFixerConfiguration tool_path="$PROJECT_DIR$/entry/vendor/bin/php-cs-fixer" />
+    </phpcsfixer_settings>
+  </component>
+  <component name="PhpCodeSniffer">
+    <phpcs_settings>
+      <PhpCSConfiguration beautifier_path="$PROJECT_DIR$/entry/vendor/bin/phpcbf" tool_path="$PROJECT_DIR$/entry/vendor/bin/phpcs" />
+    </phpcs_settings>
+  </component>
   <component name="PhpIncludePathManager">
     <include_path>
       <path value="$PROJECT_DIR$/entry/vendor/sebastian/exporter" />
@@ -112,6 +127,26 @@
       <path value="$PROJECT_DIR$/entry/vendor/guzzlehttp/psr7" />
       <path value="$PROJECT_DIR$/entry/vendor/sebastian/complexity" />
       <path value="$PROJECT_DIR$/entry/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/entry/vendor/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/entry/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/entry/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/entry/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/entry/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/entry/vendor/barryvdh/reflection-docblock" />
+      <path value="$PROJECT_DIR$/entry/vendor/barryvdh/laravel-ide-helper" />
+      <path value="$PROJECT_DIR$/entry/vendor/pdepend/pdepend" />
+      <path value="$PROJECT_DIR$/entry/vendor/php-cs-fixer/diff" />
+      <path value="$PROJECT_DIR$/entry/vendor/squizlabs/php_codesniffer" />
+      <path value="$PROJECT_DIR$/entry/vendor/nunomaduro/larastan" />
+      <path value="$PROJECT_DIR$/entry/vendor/friendsofphp/php-cs-fixer" />
+      <path value="$PROJECT_DIR$/entry/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/entry/vendor/phpmd/phpmd" />
+      <path value="$PROJECT_DIR$/entry/vendor/phpstan/phpstan" />
+      <path value="$PROJECT_DIR$/entry/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/entry/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/entry/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/entry/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/entry/vendor/symfony/options-resolver" />
     </include_path>
   </component>
   <component name="PhpInterpreters">
@@ -187,6 +222,11 @@
     </phpInfoCache>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.0" />
+  <component name="PhpStan">
+    <PhpStan_settings>
+      <PhpStanConfiguration tool_path="$PROJECT_DIR$/entry/vendor/bin/phpstan" />
+    </PhpStan_settings>
+  </component>
   <component name="PhpUnit">
     <phpunit_settings>
       <phpunit_by_interpreter interpreter_id="ea2f4fec-b1df-4bba-b80c-2104d147eb53" custom_loader_path="/var/www/entry/vendor/autoload.php" phpunit_phar_path="" />
