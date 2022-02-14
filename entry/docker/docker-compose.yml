@@ -1,0 +1,50 @@
+version: "3.7"
+services:
+    app:
+        build:
+            context: ./
+            dockerfile: Dockerfile
+        image: app
+        container_name: "pms-app"
+        restart: unless-stopped
+        working_dir: /var/www
+        volumes:
+            - ../../:/var/www
+        extra_hosts:
+            - "host.docker.internal:host-gateway"
+        environment:
+            PHP_IDE_CONFIG: serverName=server
+        links:
+            - db
+            - redis
+    nginx:
+        image: nginx:latest
+        container_name: "pms-nginx"
+        restart: unless-stopped
+        ports:
+            - "8000:80"
+        volumes:
+            - ../../:/var/www
+            - ./conf:/etc/nginx/conf.d
+        links:
+            - app
+            - db
+    db:
+        image: mysql:8.0.28
+        container_name: "pms-db"
+        restart: unless-stopped
+        ports:
+            - "3306:3306"
+        volumes:
+            - ./conf/mysql:/docker-entrypoint-initdb.d
+        environment:
+            MYSQL_DATABASE: pms
+            MYSQL_USER: pms
+            MYSQL_ROOT_PASSWORD: secret
+            MYSQL_PASSWORD: secret
+
+    redis:
+        image: "redis:alpine"
+        container_name: "pms-redis"
+        ports:
+            - "6079:6379"
