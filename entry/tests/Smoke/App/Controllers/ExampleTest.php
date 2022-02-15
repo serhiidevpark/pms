@@ -1,8 +1,7 @@
 <?php
 
-namespace Tests\Integration;
+namespace Tests\Smoke\App\Controllers;
 
-use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
 class ExampleTest extends TestCase
