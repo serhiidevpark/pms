@@ -145,6 +145,11 @@
       <excludeFolder url="file://$MODULE_DIR$/entry/vendor/seld/phar-utils" />
       <excludeFolder url="file://$MODULE_DIR$/entry/vendor/react/promise" />
       <excludeFolder url="file://$MODULE_DIR$/entry/vendor/justinrainbow/json-schema" />
+      <excludeFolder url="file://$MODULE_DIR$/entry/vendor/symfony/yaml" />
+      <excludeFolder url="file://$MODULE_DIR$/entry/vendor/zircote/swagger-php" />
+      <excludeFolder url="file://$MODULE_DIR$/entry/vendor/darkaonline/l5-swagger" />
+      <excludeFolder url="file://$MODULE_DIR$/entry/vendor/swagger-api/swagger-ui" />
+      <excludeFolder url="file://$MODULE_DIR$/entry/vendor/caouecs/laravel-lang" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

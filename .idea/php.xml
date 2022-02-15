@@ -151,11 +151,16 @@
       <path value="$PROJECT_DIR$/entry/vendor/seld/phar-utils" />
       <path value="$PROJECT_DIR$/entry/vendor/react/promise" />
       <path value="$PROJECT_DIR$/entry/vendor/justinrainbow/json-schema" />
+      <path value="$PROJECT_DIR$/entry/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/entry/vendor/zircote/swagger-php" />
+      <path value="$PROJECT_DIR$/entry/vendor/darkaonline/l5-swagger" />
+      <path value="$PROJECT_DIR$/entry/vendor/swagger-api/swagger-ui" />
+      <path value="$PROJECT_DIR$/entry/vendor/caouecs/laravel-lang" />
     </include_path>
   </component>
   <component name="PhpInterpreters">
     <interpreters>
-      <interpreter id="af1d7cdb-a897-44d6-a257-55ccdff2dcc1" name="app" home="docker-compose://DATA" debugger_id="php.debugger.XDebug">
+      <interpreter id="54c22173-99f6-45f5-b885-5964de070e77" name="app" home="docker-compose://DATA" debugger_id="php.debugger.XDebug">
         <remote_data INTERPRETER_PATH="php" HELPERS_PATH="/opt/.phpstorm_helpers" INITIALIZED="false" VALID="true" RUN_AS_ROOT_VIA_SUDO="false" DOCKER_ACCOUNT_NAME="Docker" DOCKER_COMPOSE_SERVICE_NAME="app" DOCKER_REMOTE_PROJECT_PATH="/opt/project">
           <type_data command="RUN" />
           <dockerComposeConfigurationPaths>
@@ -233,7 +238,7 @@
   </component>
   <component name="PhpUnit">
     <phpunit_settings>
-      <phpunit_by_interpreter interpreter_id="af1d7cdb-a897-44d6-a257-55ccdff2dcc1" configuration_file_path="/var/www/entry/phpunit.xml" custom_loader_path="/var/www/entry/vendor/autoload.php" phpunit_phar_path="" use_configuration_file="true" />
+      <phpunit_by_interpreter interpreter_id="54c22173-99f6-45f5-b885-5964de070e77" configuration_file_path="/var/www/entry/phpunit.xml" custom_loader_path="/var/www/entry/vendor/autoload.php" phpunit_phar_path="" use_configuration_file="true" />
     </phpunit_settings>
   </component>
 </project>
