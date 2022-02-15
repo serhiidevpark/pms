@@ -160,7 +160,7 @@
   </component>
   <component name="PhpInterpreters">
     <interpreters>
-      <interpreter id="54c22173-99f6-45f5-b885-5964de070e77" name="app" home="docker-compose://DATA" debugger_id="php.debugger.XDebug">
+      <interpreter id="85206c5d-f70f-4259-9de1-55e783462ed0" name="app" home="docker-compose://DATA" debugger_id="php.debugger.XDebug">
         <remote_data INTERPRETER_PATH="php" HELPERS_PATH="/opt/.phpstorm_helpers" INITIALIZED="false" VALID="true" RUN_AS_ROOT_VIA_SUDO="false" DOCKER_ACCOUNT_NAME="Docker" DOCKER_COMPOSE_SERVICE_NAME="app" DOCKER_REMOTE_PROJECT_PATH="/opt/project">
           <type_data command="RUN" />
           <dockerComposeConfigurationPaths>
@@ -238,7 +238,7 @@
   </component>
   <component name="PhpUnit">
     <phpunit_settings>
-      <phpunit_by_interpreter interpreter_id="54c22173-99f6-45f5-b885-5964de070e77" configuration_file_path="/var/www/entry/phpunit.xml" custom_loader_path="/var/www/entry/vendor/autoload.php" phpunit_phar_path="" use_configuration_file="true" />
+      <phpunit_by_interpreter interpreter_id="85206c5d-f70f-4259-9de1-55e783462ed0" configuration_file_path="/var/www/entry/phpunit.xml" custom_loader_path="/var/www/entry/vendor/autoload.php" phpunit_phar_path="" use_configuration_file="true" />
     </phpunit_settings>
   </component>
 </project>

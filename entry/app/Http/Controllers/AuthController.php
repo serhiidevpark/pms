@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Http\Controllers;
 
 use App\Models\User;
@@ -12,7 +14,7 @@ class AuthController extends Controller
         $fields = $request->validate([
             'name' => 'required|string|max:255|min:2',
             'surname' => 'required|string|max:255|min:2',
-            'email' => ['email:rfc','required','unique:App\Models\User,email'],
+            'email' => ['email:rfc','required','unique:App\\Models\\User,email'],
             'password' => 'required|min:8|string|max:255|confirmed',
         ]);
 
@@ -20,17 +22,16 @@ class AuthController extends Controller
             'name' => $fields['name'],
             'surname' => $fields['surname'],
             'email' => $fields['email'],
-            'password' => bcrypt($fields['password'])
+            'password' => bcrypt($fields['password']),
         ]);
 
         $token = $user->createToken($user->name)->plainTextToken;
 
         $response = [
             'user' => $user,
-            'token' => $token
+            'token' => $token,
         ];
 
         return response($response, 201);
     }
-
 }
