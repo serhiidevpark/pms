@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Http\OpenApi\Controllers;
 
 class AuthControllerOA
@@ -30,5 +32,7 @@ class AuthControllerOA
      *     )
      * )
      */
-    private function login(){}
+    private function login()
+    {
+    }
 }

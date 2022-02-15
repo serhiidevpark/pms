@@ -1,0 +1,253 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "PMS App",
+        "description": "Product Manager System App",
+        "contact": {
+            "name": "Devpark",
+            "url": "https://devpark.pl/",
+            "email": "admin@devpark.pl"
+        },
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "http://localhost",
+            "description": "localhost"
+        }
+    ],
+    "paths": {
+        "/login": {
+            "post": {
+                "tags": [
+                    "auth"
+                ],
+                "summary": "Sign in",
+                "description": "Login by email, password",
+                "operationId": "authLogin",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "email",
+                                    "password"
+                                ],
+                                "properties": {
+                                    "email": {
+                                        "type": "string",
+                                        "format": "email",
+                                        "example": "user1@mail.com"
+                                    },
+                                    "password": {
+                                        "type": "string",
+                                        "format": "password",
+                                        "example": "PassWord12345"
+                                    },
+                                    "persistent": {
+                                        "type": "boolean",
+                                        "example": "true"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "422": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Sorry, wrong email address or password. Please try again"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "date": {
+                "description": "",
+                "type": "string",
+                "format": "date",
+                "example": "2022:01:01"
+            },
+            "date_time": {
+                "type": "string",
+                "format": "date-time",
+                "example": "2021:01:01 00:00:000"
+            },
+            "id": {
+                "type": "integer",
+                "example": 1
+            },
+            "links": {
+                "description": "Links",
+                "properties": {
+                    "links": {
+                        "properties": {
+                            "first": {
+                                "type": "string",
+                                "example": "https://some_path/some-list?page=1"
+                            },
+                            "last": {
+                                "type": "string",
+                                "example": "https://some_path/some-list?page=5"
+                            },
+                            "prev": {
+                                "type": "string",
+                                "example": null,
+                                "nullable": true
+                            },
+                            "next": {
+                                "type": "string",
+                                "example": null,
+                                "nullable": true
+                            }
+                        },
+                        "type": "object"
+                    }
+                },
+                "type": "object"
+            },
+            "meta": {
+                "description": "Meta",
+                "properties": {
+                    "meta": {
+                        "properties": {
+                            "current_page": {
+                                "type": "integer",
+                                "example": 1
+                            },
+                            "from": {
+                                "type": "integer",
+                                "example": 1
+                            },
+                            "last_page": {
+                                "type": "integer",
+                                "example": 1
+                            },
+                            "path": {
+                                "type": "string",
+                                "example": "bla_bla"
+                            },
+                            "per_page": {
+                                "type": "integer",
+                                "example": 10
+                            },
+                            "to": {
+                                "type": "integer",
+                                "example": 5
+                            },
+                            "total": {
+                                "type": "integer",
+                                "example": 5
+                            }
+                        },
+                        "type": "object"
+                    }
+                },
+                "type": "object"
+            },
+            "string_item": {
+                "type": "string",
+                "example": "some value"
+            }
+        },
+        "parameters": {
+            "token_header": {
+                "name": "token",
+                "in": "header",
+                "description": "Logged token",
+                "required": true,
+                "schema": {
+                    "type": "string"
+                }
+            },
+            "user_id_path": {
+                "name": "user_id",
+                "in": "path",
+                "description": "User`s id",
+                "required": true,
+                "schema": {
+                    "type": "integer"
+                }
+            },
+            "from_date": {
+                "name": "from_date",
+                "in": "query",
+                "description": "From date for invoice searching",
+                "required": false,
+                "schema": {
+                    "type": "string",
+                    "default": "1970-01-01",
+                    "example": "2021-08-10"
+                }
+            },
+            "date_sort": {
+                "name": "date_sort",
+                "in": "query",
+                "description": "Type sorting by date",
+                "schema": {
+                    "type": "string",
+                    "default": "DESC",
+                    "enum": [
+                        "ASC",
+                        "DESC"
+                    ]
+                }
+            },
+            "to_date": {
+                "name": "to_date",
+                "in": "query",
+                "description": "To date for invoice searching",
+                "required": false,
+                "schema": {
+                    "type": "string",
+                    "default": "tooday",
+                    "example": "2021-08-10"
+                }
+            },
+            "user_id_query": {
+                "name": "user_id",
+                "in": "query",
+                "description": "Numeric ID user for resend",
+                "required": true,
+                "schema": {
+                    "type": "integer"
+                }
+            }
+        },
+        "securitySchemes": {
+            "sanctum": {
+                "type": "http",
+                "name": "BearerToken",
+                "in": "header",
+                "bearerFormat": "sanctum",
+                "scheme": "bearer"
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "Auth",
+            "description": "Auth part of application."
+        }
+    ],
+    "security": [
+        []
+    ]
+}

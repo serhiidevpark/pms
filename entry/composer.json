@@ -27,7 +27,6 @@
         "friendsofphp/php-cs-fixer": "@stable",
         "nunomaduro/larastan": "@stable",
         "phpmd/phpmd": "@stable",
-        "phpstan/phpstan": "@stable",
         "squizlabs/php_codesniffer": "@stable"
     },
     "autoload": {
@@ -49,7 +48,6 @@
         "test": "phpunit",
         "phpcbf": "phpcbf --standard=phpcs.xml app tests",
         "phpcs": "phpcs --standard=phpcs.xml app tests",
-        "phpstan": "phpstan analyse",
         "phpmd": "phpmd app,tests text codesize,controversial",
         "ci": [
             "@phpmd",
@@ -71,7 +69,7 @@
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
         ],
-        "php-cs-fixer": "php-cs-fixer fix --config=../.php-cs-fixer.dist.php --allow-risky=yes --diff",
+        "fixer": "php-cs-fixer fix --config=../.php-cs-fixer.dist.php --allow-risky=yes --diff",
         "open-api": [
             "@php artisan l5-swagger:generate"
         ]
