@@ -28,5 +28,5 @@ got to File->Settings
     Service : container php (app)
     Important!
     General should be updated to php installed version, and Xdebug installed version
-    ![](/home/serhii/Documents/pms/readmeSoutce/php.png)
+    ![readmeSoutce](php.png)
 
