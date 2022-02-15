@@ -29,11 +29,10 @@ RUN apt-get update && apt-get install -y \
 # Get latest Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
-
 # Clear cache
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# Install extensions
+# Install extensions php
 RUN docker-php-ext-install pdo pdo_mysql zip exif pcntl gd
 
 RUN pecl install xdebug-3.1.2 \
