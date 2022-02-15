@@ -9,6 +9,7 @@ $finder = PhpCsFixer\Finder::create()
         __DIR__ . '/entry/app/Models',
         __DIR__ . '/Auth',
         __DIR__ . '/User',
+        __DIR__ . '/UseCases',
     ]);
 $config = new PhpCsFixer\Config();
 
