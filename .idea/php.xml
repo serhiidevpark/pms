@@ -147,11 +147,15 @@
       <path value="$PROJECT_DIR$/entry/vendor/symfony/config" />
       <path value="$PROJECT_DIR$/entry/vendor/symfony/dependency-injection" />
       <path value="$PROJECT_DIR$/entry/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/entry/vendor/seld/jsonlint" />
+      <path value="$PROJECT_DIR$/entry/vendor/seld/phar-utils" />
+      <path value="$PROJECT_DIR$/entry/vendor/react/promise" />
+      <path value="$PROJECT_DIR$/entry/vendor/justinrainbow/json-schema" />
     </include_path>
   </component>
   <component name="PhpInterpreters">
     <interpreters>
-      <interpreter id="ea2f4fec-b1df-4bba-b80c-2104d147eb53" name="app" home="docker-compose://DATA" debugger_id="php.debugger.XDebug">
+      <interpreter id="af1d7cdb-a897-44d6-a257-55ccdff2dcc1" name="app" home="docker-compose://DATA" debugger_id="php.debugger.XDebug">
         <remote_data INTERPRETER_PATH="php" HELPERS_PATH="/opt/.phpstorm_helpers" INITIALIZED="false" VALID="true" RUN_AS_ROOT_VIA_SUDO="false" DOCKER_ACCOUNT_NAME="Docker" DOCKER_COMPOSE_SERVICE_NAME="app" DOCKER_REMOTE_PROJECT_PATH="/opt/project">
           <type_data command="RUN" />
           <dockerComposeConfigurationPaths>
@@ -229,7 +233,8 @@
   </component>
   <component name="PhpUnit">
     <phpunit_settings>
-      <phpunit_by_interpreter interpreter_id="ea2f4fec-b1df-4bba-b80c-2104d147eb53" configuration_file_path="/var/www/entry/phpunit.xml" custom_loader_path="/var/www/entry/vendor/autoload.php" phpunit_phar_path="" use_configuration_file="true" />
+      <phpunit_by_interpreter interpreter_id="af1d7cdb-a897-44d6-a257-55ccdff2dcc1" configuration_file_path="/var/www/entry/phpunit.xml" custom_loader_path="/var/www/entry/vendor/autoload.php" phpunit_phar_path="" use_configuration_file="true" />
+      <PhpUnitSettings custom_loader_path="$PROJECT_DIR$/entry/vendor/autoload.php" />
     </phpunit_settings>
   </component>
 </project>

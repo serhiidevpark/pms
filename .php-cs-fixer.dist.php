@@ -8,6 +8,7 @@ $finder = PhpCsFixer\Finder::create()
         __DIR__ . '/entry/app/Http',
         __DIR__ . '/entry/app/Models',
         __DIR__ . '/Auth',
+        __DIR__ . '/User',
     ]);
 $config = new PhpCsFixer\Config();
 

@@ -141,6 +141,10 @@
       <excludeFolder url="file://$MODULE_DIR$/entry/vendor/symfony/config" />
       <excludeFolder url="file://$MODULE_DIR$/entry/vendor/symfony/dependency-injection" />
       <excludeFolder url="file://$MODULE_DIR$/entry/vendor/symfony/options-resolver" />
+      <excludeFolder url="file://$MODULE_DIR$/entry/vendor/seld/jsonlint" />
+      <excludeFolder url="file://$MODULE_DIR$/entry/vendor/seld/phar-utils" />
+      <excludeFolder url="file://$MODULE_DIR$/entry/vendor/react/promise" />
+      <excludeFolder url="file://$MODULE_DIR$/entry/vendor/justinrainbow/json-schema" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
