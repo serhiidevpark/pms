@@ -116,4 +116,4 @@ Got to File->Settings
     Name: server
     Host: localhost
     Absolute path on the server: root-> ```/var/www``` entry-> ```/var/www/entry``` public-> ```/var/www/entry/public```
-  ![server](../master/readmeSoutce/server.png)
+  ![php](../master/readmeSoutce/server.png)
