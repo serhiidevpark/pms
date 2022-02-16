@@ -106,14 +106,22 @@ When adding new domain there is required to:
 ---
 ### PHPSTORM configuration
 Got to File->Settings 
-  1. PHP
-  Configuration file set path to the docker/docker-compose.yml Service : container php (app)
-  Important!
-  General should be updated to php installed version, and Xdebug installed version
-  ![php](../master/readmeSoutce/php.png)
+1. PHP 
+- Configuration file set path to the docker/docker-compose.yml Service : container php (app)
+- Important!
+- General should be updated to php installed version, and Xdebug installed version
+![php](../master/readmeSoutce/php.png)
 
-  2. Servers
-  Name: server
-  Host: localhost
-  Absolute path on the server: root-> ```/var/www``` entry-> ```/var/www/entry``` public-> ```/var/www/entry/public```
-  ![server](../master/readmeSoutce/server.png)
+2. Servers
+- Name: server
+- Host: localhost
+- Absolute path on the server: root-> ```/var/www``` entry-> ```/var/www/entry``` public-> ```/var/www/entry/public```
+![server](../master/readmeSoutce/server.png)
+
+3. Test Frameworks
+- ```+``` , ```PHPUnit by Remote Interpreter```
+- Select your php (like app)
+- Path to script: ```/var/www/entry/vendor/autoload.php```
+- Default configuration file: ```/var/www/entry/phpunit.xml```
+![framework](../master/readmeSoutce/framework.png)
+  
