@@ -70,7 +70,7 @@
             "@php artisan key:generate --ansi"
         ],
         "fixer": "php-cs-fixer fix --config=../.php-cs-fixer.dist.php --allow-risky=yes --diff",
-        "open-api": [
+        "swagger": [
             "@php artisan l5-swagger:generate"
         ]
     },

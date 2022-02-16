@@ -34,7 +34,7 @@ composer phpstan
 #### Usage
 ```bash
 cd entry
-composer open-api
+composer swagger
 ```
 This will generate two files in folder `storage/api-doc` called `api-docs.json` and `resources/views/vendor/l5-swagger/index.blade.php`.
 
@@ -106,9 +106,14 @@ When adding new domain there is required to:
 ---
 ###PHPSTORM configuration
 Got to File->Settings 
-  1. PHP  
+  1. PHP
   Configuration file set path to the docker/docker-compose.yml Service : container php (app)
   Important!
   General should be updated to php installed version, and Xdebug installed version
   ![php](../master/readmeSoutce/php.png)
 
+  2. Servers
+    Name: server
+    Host: localhost
+    Absolute path on the server: root-> ```/var/www``` entry-> ```/var/www/entry``` public-> ```/var/www/entry/public```
+  ![php](../master/readmeSoutce/server.png)
