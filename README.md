@@ -104,7 +104,7 @@ When adding new domain there is required to:
 6. Run migrations
 ```php artisan migrate```
 ---
-###PHPSTORM configuration
+### PHPSTORM configuration
 Got to File->Settings 
   1. PHP
   Configuration file set path to the docker/docker-compose.yml Service : container php (app)
@@ -116,4 +116,4 @@ Got to File->Settings
     Name: server
     Host: localhost
     Absolute path on the server: root-> ```/var/www``` entry-> ```/var/www/entry``` public-> ```/var/www/entry/public```
-  ![php](../master/readmeSoutce/server.png)
+  ![server](../master/readmeSoutce/server.png)
